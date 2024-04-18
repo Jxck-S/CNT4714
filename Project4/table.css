@@ -1,0 +1,33 @@
+/* CSS for table */
+table {
+    border-collapse: collapse;
+    text-align: center;
+    margin: auto;
+}
+
+/* CSS for table header */
+th {
+    background-color: mediumslateblue;
+    color: #333;
+    font-weight: bold;
+    padding: 10px;
+    text-align: left;
+    border: 3px solid black;
+}
+
+/* CSS for table rows */
+tr {
+    background-color: #fff;
+}
+
+/* CSS for alternating row colors */
+tr:nth-child(odd) {
+    background-color: lightgray;
+}
+
+/* CSS for table cells */
+td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    white-space: nowrap;
+}
