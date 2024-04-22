@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2.3.dtd">
+<web-app>
+  <display-name>Project 4 Enterprise Computing</display-name>
+  <description>Project 4 Tomcat App</description>
+
+   <servlet>
+      <servlet-name>Auth</servlet-name>
+      <description>
+         auth.
+      </description>
+      <servlet-class>AuthCheck</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>Auth</servlet-name>
+      <url-pattern>/authcheck</url-pattern>
+   </servlet-mapping>
+
+
+
+   <servlet>
+      <servlet-name>RootServlet</servlet-name>
+      <description>
+         rootservlet.
+      </description>
+      <servlet-class>RootServlet</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>RootServlet</servlet-name>
+      <url-pattern>/rootservlet</url-pattern>
+   </servlet-mapping>
+
+
+   <servlet>
+      <servlet-name>ClientServlet</servlet-name>
+      <description>
+         ClientServlet.
+      </description>
+      <servlet-class>ClientServlet</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>ClientServlet</servlet-name>
+      <url-pattern>/clientservlet</url-pattern>
+   </servlet-mapping>
+
+
+   <servlet>
+      <servlet-name>AccountantServlet</servlet-name>
+      <description>
+         AccountantServlet.
+      </description>
+      <servlet-class>AccountantServlet</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>AccountantServlet</servlet-name>
+      <url-pattern>/accountantservlet</url-pattern>
+   </servlet-mapping>
+
+
+   <servlet>
+      <servlet-name>DE</servlet-name>
+      <description>
+         DataEntryServlet.
+      </description>
+      <servlet-class>DataEntryServlet</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>DE</servlet-name>
+      <url-pattern>/dataentryservlet</url-pattern>
+   </servlet-mapping>
+      <servlet-mapping>
+      <servlet-name>DE</servlet-name>
+      <url-pattern>/dataentryservlet/</url-pattern>
+   </servlet-mapping>
+
+
+   <servlet>
+      <servlet-name>LogoutServlet</servlet-name>
+      <description>
+         LogoutServlet.
+      </description>
+      <servlet-class>LogoutServlet</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>LogoutServlet</servlet-name>
+      <url-pattern>/logout</url-pattern>
+   </servlet-mapping>
+
+</web-app>
